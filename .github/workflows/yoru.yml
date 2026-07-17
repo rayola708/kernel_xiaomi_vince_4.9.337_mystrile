@@ -1,4 +1,4 @@
-name: PhroLova Kernel
+name: vince Kernel
 
 on:
   workflow_dispatch:
