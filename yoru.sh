@@ -13,8 +13,8 @@ if [ -z "$VARIANT" ]; then
 fi
 
 # ================= PATH =================
-DEFCONFIG="tissot_defconfig"
-TEMP_DEFCONFIG="tissot_temp_defconfig"
+DEFCONFIG="vince_defconfig"
+TEMP_DEFCONFIG="vince_temp_defconfig"
 ROOTDIR=$(pwd)
 OUTDIR="$ROOTDIR/out/arch/arm64/boot"
 ANYKERNEL_DIR="$ROOTDIR/AnyKernel"
@@ -25,7 +25,7 @@ KIMG="$OUTDIR/Image.gz"
 export PATH="$ROOTDIR/clang-zyc/bin:$PATH"
 
 # ================= INFO =================
-KERNEL_NAME="PhroLova-Treble"
+KERNEL_NAME="Mystrile"
 DEVICE="tissot"
 
 # =============== DATE (WIB) ===============
