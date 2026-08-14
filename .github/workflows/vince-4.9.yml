@@ -49,10 +49,10 @@ jobs:
 
       - name: Setup KernelSU (Hookless)
         run: |
+          curl -LSs "https://raw.githubusercontent.com/MDonip/KernelSU-Next/legacy-susfs-4.9/kernel/setup.sh" | bash -s legacy-susfs-4.9
           # curl -LSs "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/next/kernel/setup.sh" | bash -s legacy
           # curl -LSs "https://raw.githubusercontent.com/Mr-Morat/KernelSU-Next/stable/kernel/setup.sh" | bash -s syscall
-          curl -LSs "https://raw.githubusercontent.com/MDonip/KernelSU-Next/legacy-susfs-4.9/kernel/setup.sh" | bash -s legacy-susfs-4.9    
-
+          
       # - name: Patch Kernel With Manual Hook
         # run: |
           # patch -p1 < 0001-ksu-manual-hooks-k49-final.patch
