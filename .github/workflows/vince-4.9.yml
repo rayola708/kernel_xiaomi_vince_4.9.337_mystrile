@@ -49,6 +49,7 @@ jobs:
 
       - name: Setup KernelSU (Hookless)
         run: |
+          # curl -LSs "https://raw.githubusercontent.com/backslashxx/KernelSU/master/kernel/setup.sh" | bash -
           curl -LSs "https://raw.githubusercontent.com/MDonip/KernelSU-Next/legacy-susfs-4.9/kernel/setup.sh" | bash -s legacy-susfs-4.9
 
       - name: Start Build with log
