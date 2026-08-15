@@ -63,7 +63,7 @@ jobs:
           TELE_SESSION: ${{ secrets.TELE_SESSION }}
         run: |
           mkdir -p logs
-          bash yoru.sh ${{ matrix.variant }} 2>&1 | tee logs/build-${{ matrix.variant }}.txt
+          bash mystrile.sh ${{ matrix.variant }} 2>&1 | tee logs/build-${{ matrix.variant }}.txt
 
       - name: Upload Build Log
         if: always()
